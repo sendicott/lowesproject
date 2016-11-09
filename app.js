@@ -51,6 +51,9 @@ function getData() {
 
                 let cartButton = document.createElement("button");
                 cartButton.innerHTML = "Add to Cart";
+                cartButton.onclick = function() {
+                    alert("$" + delivery[i].pricing.price.retail);
+                }
                 cartButton.className = "cartButton";
 
                 let cartPrice = document.createElement("p");
