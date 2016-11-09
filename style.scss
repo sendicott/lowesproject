@@ -1,0 +1,101 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+
+    #hero {
+        background-color: whitesmoke;
+        width: 95%;
+        border: 1px solid black;
+        margin-left: 1%;
+        min-height: 125px;
+        padding: 1% 3%;
+        display: inline-flex;
+        justify-content: space-between;
+
+        .picBox {
+            width: 25%;
+
+            .pic {
+                height: 125px;
+            }
+        }
+
+        .detailsBox {
+            width: 40%;
+            font-size: .85em;
+
+            .heroText {
+                margin-top: 5px;
+            }
+
+            .heroBullets {
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .cartBox {
+            width: 30%;
+            text-align: center;
+
+            .cartButton {
+                text-align: center;
+                margin-top: 5px;
+                border: 1px solid black;
+                padding: 10px 60px;
+                font-size: .85em;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: yellow;
+                }
+            }
+
+            .cartPrice {
+                margin-top: 25px;
+            }
+        }
+
+    }
+    
+    #list {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        overflow-y: auto;
+        height: 600px;
+
+        .productBox {
+            text-align: center;
+            background-color: whitesmoke;
+            border: 1px solid black;
+            width: 30%;
+            margin: 1%;
+            height: 300px;
+            padding-top: 2%;
+
+            .picture {
+                height: 100px;
+            }
+
+            .description {
+                height: 65px;
+                font-size: .75em;
+            }
+
+            .cost {
+                height: 25px;
+            }
+
+            .viewButton {
+                display: inline-block;
+                background-color: lightgray;
+                border: 1px solid black;
+                padding: 5px;
+                width: 80%;
+            }
+        }
+    }
+
+}
